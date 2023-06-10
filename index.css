@@ -1,0 +1,97 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+/* header */
+
+header,
+.action-btns {
+    display: flex;
+    align-items: center;
+}
+
+header {
+    justify-content: space-between;
+    padding: 0.625em;
+}
+
+header > img {
+    max-height: 30px;
+    object-fit: contain;
+}
+
+/* Profile Card */
+
+.profile-card {
+    position: relative;
+}
+
+.profile-card > img {
+    width: 100%;
+    border-radius: 0.625em;
+}
+
+.dog-profile-info {
+    position: absolute;
+    bottom: 0.5em;
+    left: 0.5em;
+}
+
+.dog-profile-info > * {
+    margin: 0 0 0.4em;
+}
+
+.dog-profile-info > h2 {
+    color: #F8F8F8;
+    font-size: 1.6rem;
+}
+
+.dog-profile-info > p {
+    color: #B7B7B7;
+    font-size: 1.3rem;
+}
+
+.badge {
+    position: absolute;
+    top: 2.5em;
+    left: 0.4em;
+    transform: rotate(-45deg);
+}
+
+.badge > img {
+    max-width: 150px;
+}
+
+/* action Buttons */
+
+.action-btns {
+    padding: 0.45em 0 0.6em;
+    justify-content: center;
+    gap: 1.5em;
+    background: linear-gradient(180deg, #FFFFFF 0%, #F6F7FB 100%);
+}
+
+.action-btn {
+    padding: 0.85em 1em;
+    border-radius: 50%;
+    background: #FFFFFF;
+    box-shadow: 0px 10px 20px #E9E9EA;
+    cursor: pointer;
+}
+
+.cross-btn:hover {
+    background: #FFE7EF;
+}
+
+.heart-btn:hover {
+    background: #DBFFF4;
+}
+
+.action-btn > img {
+    max-height: 25px;
+}
